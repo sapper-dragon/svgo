@@ -1,0 +1,31 @@
+{
+  "name": "@sapper-dragon/svgo",
+  "version": "0.0.0",
+  "description": "Decorate your Sapper project with SVGO.",
+  "license": "MIT",
+  "author": "Robert Hall <langbert@gmail.com> (http://arxpoetica.com/)",
+  "homepage": "https://github.com/sapper-dragon/svgo#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sapper-dragon/svgo.git"
+  },
+  "keywords": [
+    "sapper",
+    "svg"
+  ],
+  "bugs": {
+    "url": "https://github.com/sapper-dragon/svgo/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "trim-svgo": "./trim-svgo"
+  },
+  "dependencies": {
+    "ansi-colors": "3.2.4",
+    "svgo": "1.2.2"
+  },
+  "devDependencies": {}
+}
