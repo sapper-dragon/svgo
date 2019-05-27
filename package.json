@@ -11,6 +11,7 @@
   },
   "keywords": [
     "sapper",
+    "svgo",
     "svg"
   ],
   "bugs": {
@@ -19,9 +20,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "bin": {
-    "trim-svgo": "./trim-svgo"
   },
   "dependencies": {
     "ansi-colors": "3.2.4",

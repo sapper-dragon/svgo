@@ -1,8 +1,8 @@
-# sapper-svgo
+# @sapper-dragon/svgo
 
 Decorate your [Sapper](https://sapper.svelte.dev/) project with SVGO.
 
-`sapper-svgo` utilizes [SVGO](https://github.com/svg/svgo) under the surface, which is a tool for optimizing Scalable Vector Graphics files.
+`@sapper-dragon/svgo` utilizes [SVGO](https://github.com/svg/svgo) under the surface, which is a tool for optimizing Scalable Vector Graphics files.
 
 ## Installation
 
@@ -14,7 +14,7 @@ yarn add @sapper-dragon/svgo --dev
 
 ## Usage
 
-This project requires the [sapper-trimmings](https://github.com/sapper-dragon/trimmings) lib, so look there first for first instructions, then come back. 💫
+This project requires the [@sapper-dragon/trimmings](https://github.com/sapper-dragon/trimmings) lib, so look there first for first instructions, then come back. 💫
 
 `@sapper-dragon/svgo` converts files from an `SVGO` folder and exports them to optimized and importable `*.svelte` files and static `*.svg` files.
 
