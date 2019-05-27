@@ -9,14 +9,14 @@ const svgoStatic = new SVGO({ plugins: plugins.static, js2svg: { pretty: true, i
 
 export const change = async({ config, filepath }) => {
 	try {
-		const content = await readFile(`${config.svgo.watchPath}/${filepath}`, 'utf8')
+		const content = await readFile(`${config.svgo.import}/${filepath}`, 'utf8')
 
 		const svelteSvg = (await svgoSvelte.optimize(content)).data
 		const staticSvg = (await svgoStatic.optimize(content)).data
 
 		const paths = [
-			`${config.svgo.sveltePath}/${filepath}`,
-			`${config.svgo.staticPath}/${filepath}`,
+			`${config.svgo.exportSvelte}/${filepath}`,
+			`${config.svgo.exportStatic}/${filepath}`,
 		]
 		await writeFile(paths[0], svelteSvg)
 		await writeFile(paths[1], staticSvg)
@@ -32,8 +32,8 @@ export const change = async({ config, filepath }) => {
 
 export const remove = async({ config, filepath }) => {
 	const commands = [
-		`rm -f ${config.svgo.sveltePath}/${filepath}`,
-		`rm -f ${config.svgo.staticPath}/${filepath}`,
+		`rm -f ${config.svgo.exportSvelte}/${filepath}`,
+		`rm -f ${config.svgo.exportStatic}/${filepath}`,
 	]
 	try {
 		for (let command of commands) {

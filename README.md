@@ -25,10 +25,10 @@ You can place a `trimmings.config.js` file in the root of your project to set co
 ```js
 export default {
 	svgo: {
-		watchPath: 'src/trimmings/svgo', // path to watch *.svg files:
-		pathMatcher: /\.(svg)$/, // pattern for files to watch:
-		sveltePath: 'src/routes/_svg', // svelte output path:
-		staticPath: 'static/svg', // static output path:
+		import: 'src/trimmings/svgo', // path to watch *.svg files
+		filter: /\.(svg)$/, // pattern for files to watch
+		exportSvelte: 'src/routes/_svg', // svelte output path
+		exportStatic: 'static/svg', // static output path
 	},
 	// ... additional settings from other @sapper-dragon packages...
 }
