@@ -33,3 +33,5 @@ export default {
 	// ... additional settings from other @sapper-dragon packages...
 }
 ```
+
+If `outputSvelte` or `outputStatic` are set to `false`, files will not be saved to those paths.
