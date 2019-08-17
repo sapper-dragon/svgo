@@ -31,10 +31,11 @@ export const change = async({ config, filepath }) => {
 			await writeFile(path, staticSvg)
 			console.log(`    ${path}`)
 		}
-		console.log()
 	} catch (error) {
-		console.error(`exec error: ${error}`)
+		console.error(red('Error:'))
+		console.error(error)
 	}
+	console.log()
 }
 
 export const remove = async({ config, filepath }) => {
@@ -61,7 +62,8 @@ export const remove = async({ config, filepath }) => {
 		}
 
 	} catch (error) {
-		console.error(`error: ${error}`)
+		console.error(red('Error:'))
+		console.error(error)
 	}
 	console.log()
 }
