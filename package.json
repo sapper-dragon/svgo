@@ -1,6 +1,6 @@
 {
   "name": "@sapper-dragon/svgo",
-  "version": "0.0.10",
+  "version": "0.1.0",
   "description": "Decorate your Sapper project with SVGO.",
   "license": "MIT",
   "author": "Robert Hall <langbert@gmail.com> (http://arxpoetica.com/)",
